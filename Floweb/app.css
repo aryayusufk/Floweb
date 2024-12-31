@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 24px
+}
+
+body {
+  font-family: 'Rasa', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  color: aliceblue;
+  animation: fadein ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 400px 0;
+  gap: 50px;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main p {
+  max-width: 750px;
+  text-align: center;
+}
+
+main button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px 10px 15px;
+  background-color: #1a1a1a;
+  color: aliceblue;
+  stroke-width: 1px;
+  stroke: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 100px;
+  max-width: fit-content;
+}
+
+main button a {
+  color: aliceblue;
+}
